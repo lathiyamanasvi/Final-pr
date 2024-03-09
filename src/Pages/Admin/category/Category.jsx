@@ -37,7 +37,7 @@ useEffect(()=>{
       <div className='col-md-2'>
         <Leftsiderbar />
       </div>
-      <div className='col-md-10'>
+      <div className='col-md-10 p-5'>
         <Link to={'/admin/add'} className='text-dark'>Add Category</Link>
         <table className="table mt-3" style={{width:"100% !important"}}>
             <thead className='table-primary'>

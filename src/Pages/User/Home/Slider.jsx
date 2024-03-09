@@ -23,7 +23,7 @@ function Slider() {
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
         </div>
-        {/* <div class="carousel-inner">
+        <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/b656a7f4-4688-4997-bb7c-54b78793981e1658752386588-Western-Wear_Desk.jpg" class="d-block w-100" alt="..." style={{ height: "400px" }} />
             <div class="carousel-caption d-none d-md-block">
@@ -44,9 +44,8 @@ function Slider() {
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
-        </div> */}
-        <div class="carousel-inner">
-        {
+        </div> 
+        {/* {
           slider.map((val,i)=>{i=i+1
             return(
               <div class="carousel-item">
@@ -56,8 +55,7 @@ function Slider() {
           </div>
             )
           })
-        }
-        </div>
+        } */}
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>

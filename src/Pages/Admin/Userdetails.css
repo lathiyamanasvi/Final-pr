@@ -3,12 +3,12 @@
   .user-card {
     position: relative;
     height: 150px;
-    width: 512px;
+    width: 100%;
     border: 1px solid #ddd;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding: 16px;
+    padding: 10px;
   }
   .user-card:after {
     position: absolute;

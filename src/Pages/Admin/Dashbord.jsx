@@ -40,8 +40,8 @@ const Dashboard = () => {
           <Leftsiderbar />
         </div>
 
-        <div className='col-md-10'>
-          <table class="table table-striped">
+        <div className='col-md-10 p-5'>
+          <table class="table table-hover ">
             <thead>
               <tr>
                 <th scope="col">SrNo</th>
@@ -58,10 +58,9 @@ const Dashboard = () => {
                   <th scope="row">{i}</th>
                   <td>{val.Firstname}</td>
                   <td>{val.email}</td>
-                  <td className='d-flex justify-content-between'>
+                  <td className='d-flex'>
                     <Link to={`/details/${val.id}`}><button className='btn btn-success btn-sm'>View</button></Link>
                     <Link><button className='btn btn-danger btn-sm mx-2'>Delete</button></Link>
-                    <button className='btn btn-primary btn-sm'>Edit</button>
                   </td>
                 </tr>
                 )

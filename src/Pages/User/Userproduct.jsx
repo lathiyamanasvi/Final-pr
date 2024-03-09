@@ -149,7 +149,7 @@ function Userproduct() {
                             All
                           </label>
                         </div>
-                        ~
+                        
                         <h2 class="border-bottom filter-title">Market</h2>
                         <div onChange={(e) => setMarketStatusFilter(e.target.value)} value={marketStateFilter}>
                           <div class="form-check">
@@ -184,14 +184,13 @@ function Userproduct() {
             {
               product && product.map((val) => {
                 return (
-                  <div class="flex-column align-items-center justify-content-center product-item my-3 bg-white m-1 p-3" style={{ width: "18rem" }}>
+                  <div class="flex-column align-items-center justify-content-center product-item my-3 bg-white m-1 pb-3 px-3" style={{ width: "18rem" }}>
                     <div class="product"> <img src={val.image} alt="" />
                       <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
                         <Link to={`/productdetails/${val.id}`}>
                           <li class="icon"><span><FaExpandArrowsAlt /></span></li>
                         </Link>
-                        <li class="icon mx-
-                        ]3 fs-5"><span><FaRegHeart /></span></li>
+                        <li class="icon mx-3 fs-5"><span><FaRegHeart /></span></li>
                         <li class="icon fs-5 me-3" onClick={() => Add(val.id)}><span><GiShoppingBag /></span></li>
                       </ul>
                     </div>

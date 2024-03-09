@@ -48,7 +48,7 @@ function Header() {
     return (
         <>
             <div className="border-end mb-5">
-                <nav id="navbar" class="border-bottom">
+                <nav id="navbar" class="d-flex m-auto">
                     <div class="nav-wrapper">
 
                         <div class="logo">
@@ -58,36 +58,16 @@ function Header() {
 
 
                         <ul id="menu">
-                            <li><Link to={'/user/home'}>Home</Link></li>
-                            <li><Link to={'/user/product'}>Product</Link></li>
-                            <li><Link href="#about">About</Link></li>
-                            <li><Link href="#contact">Contact</Link></li>
+                            <li className='text'><Link to={'/user/home'}>Home</Link></li>
+                            <li className='text'><Link to={'/user/product'}>Product</Link></li>
+                            <li className='text'><Link href="#about">About</Link></li>
+                            <li className='text'><Link href="#contact">Contact</Link></li>
                         </ul>
+
+                        
                     </div>
-                </nav>
-                <div class="menuIcon">
-                    <span class="icon icon-bars"></span>
-                    <span class="icon icon-bars overlay"></span>
-                </div>
-                <div class="overlay-menu">
-                    <ul id="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className='p-3 d-flex justify-content-between' style={{ backgroundColor: "#F5F5F3", marginTop: "61px" }}>
-
-                <div class="search">
-                    <input type="text" class="search__input" placeholder="Type your text" />
-                    {/* <button class="search__button">
-                    <CiSearch />
-                    </button> */}
-                </div>
-                <div className='d-flex'>
+                    <div>
+                    <div className='d-flex'>
                     <div class="dropdown">
                         <button class=" dropdown-toggle bg-transparent" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                             <FaUser className='fs-4' />
@@ -107,6 +87,31 @@ function Header() {
                         
                     </div>
                 </div>
+                </div>
+                </nav>
+                <div class="menuIcon">
+                    <span class="icon icon-bars"></span>
+                    <span class="icon icon-bars overlay"></span>
+                </div>
+                <div class="overlay-menu">
+                    <ul id="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className='p-3 d-flex justify-content-between' style={{ backgroundColor: "#F5F5F3", marginTop: "61px" }}>
+
+                {/* <div class="search">
+                    <input type="text" class="search__input" placeholder="Type your text" />
+                    {/* <button class="search__button">
+                    <CiSearch />
+                    </button> */}
+                {/* </div> */} 
+                
             </div>
 
 
