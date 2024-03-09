@@ -1,0 +1,733 @@
+{
+  "user": [
+    {
+      "username": "Manasvi",
+      "email": "manasvi@gmail.com",
+      "password": "1234",
+      "role": "Admin",
+      "id": "02ed"
+    },
+    {
+      "id": "f1b1",
+      "Firstname": "purvi",
+      "Lastname": "vanpariya",
+      "email": "purvi@gmail.com",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "ab10",
+      "Firstname": "Bhakti",
+      "Lastname": "Miroliya",
+      "email": "Bhakti@gmail.com",
+      "password": "2345",
+      "role": "user"
+    },
+    {
+      "id": "d034",
+      "Firstname": "Jigar",
+      "Lastname": "Makvana",
+      "email": "Jigar@gmail.com",
+      "password": "123",
+      "role": "user"
+    }
+  ],
+  "category": [
+    {
+      "id": "c9c4",
+      "category": "Mobile"
+    },
+    {
+      "id": "4b0c",
+      "category": "Airpodes"
+    },
+    {
+      "id": "988d",
+      "category": "watch"
+    },
+    {
+      "id": "300b",
+      "category": "Cloths"
+    },
+    {
+      "id": "0ef4",
+      "category": "Cosmetic"
+    },
+    {
+      "id": "e3e1",
+      "category": "Accessories"
+    },
+    {
+      "id": "f279",
+      "category": "Shoes"
+    },
+    {
+      "id": "d559",
+      "category": "Toys"
+    },
+    {
+      "id": "46c6",
+      "category": "Bags"
+    },
+    {
+      "id": "b700",
+      "category": "Footwear"
+    },
+    {
+      "id": "a1e2",
+      "category": "Electonics"
+    },
+    {
+      "id": "abc0",
+      "category": "Chocolate"
+    }
+  ],
+  "product": [
+    {
+      "id": "4bd1",
+      "product": "beatXp pro Watch",
+      "price": "799",
+      "description": "24/7 Health Tracking: Stay on top of your wellness with our 24/7 health tracking feature, monitoring your heart rate, sleep patterns, SpO2 and more.",
+      "category": "watch",
+      "image": "https://m.media-amazon.com/images/I/71wTOnIlUWL._SX679_.jpg",
+      "status": "Deactive",
+      "market": "Best"
+    },
+    {
+      "id": "1ba5",
+      "product": "MARS Creamy Matte Lipstick",
+      "price": "189",
+      "description": "Explore the entire range of Lipstick available on Nykaa. Shop more MARS products here.You can browse through the complete world of MARS Lipstick .",
+      "category": "Cosmetic",
+      "image": "https://images-static.nykaa.com/media/catalog/product/3/6/3615390MARSX00000487-1.jpg?tr=w-344,h-344,cm-pad_resize",
+      "status": "Active",
+      "market": "Latest"
+    },
+    {
+      "id": "b8b8",
+      "product": "Campus",
+      "price": "1199",
+      "description": "A pair of off-white & black running sports shoes, has regular styling, lace-up detail Mesh upper",
+      "category": "Shoes",
+      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13782284/2022/6/30/374598d1-1fe5-44d2-990d-ad38891dee0a1656582776784CampusMenOff-WhiteMeshRunningShoes1.jpg",
+      "status": "Active",
+      "market": "Latest"
+    },
+    {
+      "id": "7d17",
+      "product": " Adidas Unisex",
+      "price": "2583",
+      "description": "These running-inspired adidas sneaker provide accessible fashion that is easy to wear, everywhere. They feature a durable textile upper and a rubber outsole for elevated grip. Made with a series of recycled materials, this product represents just one of our solutions to help end plastic waste. ",
+      "category": "Shoes",
+      "image": "https://m.media-amazon.com/images/I/51jqkE2i3IL._SL1000_.jpg",
+      "status": "Active",
+      "market": "Upcoming"
+    },
+    {
+      "id": "8bb3",
+      "product": "Titan Unisex's Watch",
+      "price": "6110",
+      "description": "This product is a set of analog watches for men and women. Each watch has plain three hands on an off-white, round dial with calendar showing the day and date.",
+      "category": "watch",
+      "image": "https://m.media-amazon.com/images/S/aplus-media/sota/bb1af7a3-12ac-4790-99da-de613868994e.__CR0,0,300,300_PT0_SX300_V1___.jpg",
+      "status": "Active",
+      "market": "Best"
+    },
+    {
+      "id": "190c",
+      "product": "MARC LOUIS",
+      "price": "841",
+      "description": "Round Sunglasses With UV Protected Lens ML B80-320",
+      "category": "Accessories",
+      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22721804/2023/4/13/71440fc4-2a7b-4096-b9aa-a936c89ae1ab1681374129362MARCLOUISUnisexGreyLensGold-TonedRoundSunglasseswithUVProtec1.jpg",
+      "status": "Active",
+      "market": "Best"
+    },
+    {
+      "id": "8599",
+      "product": "OnePlus 12",
+      "price": "64999",
+      "description": "Pro-Level Hasselblad Camera System: Primary 50MP Sony's LYT-808 with OIS - 64 MP 3X Periscope Telephoto for studio-level portraits - 48 MP Ultra-wide 114° Fov",
+      "category": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/71o8VehMHXL._SX679_.jpg",
+      "status": "Active",
+      "market": "Upcoming"
+    },
+    {
+      "id": "b650",
+      "product": "Babyhug Teddy Bear",
+      "price": "537",
+      "description": "Crafted with perfection using the finest materials to give cuddly filling to your little ones Made of super non toxic, soft poly fibre cover stuffed inside",
+      "category": "Toys",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/438x531/11394202a.webp",
+      "status": "Deactive",
+      "market": "Best"
+    },
+    {
+      "id": "d160",
+      "product": "Safari",
+      "price": "3099",
+      "description": "Luma Printed Poly Carbonate Medium Hard Trolley Bag - 65 cm",
+      "category": "Bags",
+      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/18552116/2022/9/5/6f953194-654e-4c29-a9a0-d45d08b5a1941662394271504SafariBlueYellowPrintedCabin-SizedTrolleyBag1.jpg",
+      "status": "Deactive",
+      "market": "Upcoming"
+    },
+    {
+      "id": "bb96",
+      "product": "JOHN PLAYERS",
+      "price": "2205",
+      "description": "Colourblock Slim Fit Puffer Jacket",
+      "category": "Cloths",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230928/I6hk/65159753afa4cf41f515788f/-473Wx593H-443011090-white-MODEL5.jpg",
+      "status": "Active",
+      "market": "Best"
+    },
+    {
+      "id": "8bd8",
+      "product": "SCOOBA Reversible Rabbit",
+      "price": "319",
+      "description": "SCOOBA super soft reversible bunny strawberry stuffed toy Made with Love: SCOOBA stuffed toy is crafted using non-toxic materials to ensure that every single snuggle is safe.",
+      "category": "Toys",
+      "image": "https://m.media-amazon.com/images/I/619dZ2HD-ML._SY450_.jpg",
+      "status": "Active",
+      "market": "Latest"
+    },
+    {
+      "id": "4d49",
+      "product": "Samsung Galaxy M34",
+      "price": "15999",
+      "description": "Midnight Blue,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|12GB RAM with RAM+|Android 13|Without Charger",
+      "category": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/91fonhAtoAL._SX679_.jpg",
+      "status": "Active",
+      "market": "Upcoming"
+    },
+    {
+      "id": "32ab",
+      "product": "boAt Immortal 121",
+      "price": "1099",
+      "description": "boAt Immortal 121 TWS Earbuds with Beast™ Mode(40ms Low Latency) for Gaming, 40H Playtime, Blazing LEDs, Quad Mics ENx Signature Sound, ASAP™ Charge(10 Mins= 180 Mins)(Black Sabre",
+      "category": "Airpodes",
+      "image": "https://m.media-amazon.com/images/I/61q-2yzbBtL._SY450_.jpg",
+      "status": "Active",
+      "market": "Latest"
+    },
+    {
+      "id": "d2c6",
+      "product": "Strap Heel Sandal",
+      "price": "779",
+      "description": "mehnam presenting a classy range of footwear's that compliments your modern style statement. featuring a pretty pair of this heel with super comfortable sole that keeps your feet happy, style with your causal dress to complete your look.",
+      "category": "Footwear",
+      "image": "https://img3.junaroad.com/uiproducts/20225202/zoom_0-1693126542.jpg",
+      "status": "Active",
+      "market": "Latest"
+    },
+    {
+      "id": "2ff4",
+      "product": "Flare Solid Dress",
+      "price": "969",
+      "description": "looking for some awesome collection of dresses? well, lay your hands on  this dress from marc louis and also get the option of choosing from red colour.",
+      "category": "Cloths",
+      "image": "\thttps://img3.junaroad.com/uiproducts/18592754/zoom_3-1666020365.jpg",
+      "status": "Active",
+      "market": "Upcoming"
+    },
+    {
+      "id": "2fbc",
+      "product": "Black & Bold Perfume Du",
+      "price": "477",
+      "description": "Celebrate this season with our specially curated perfume gift set for men. The perfume for men combo pack is carefully designed with versatile scents, making it a thoughtful and memorable present that resonates with any occasion",
+      "category": "Accessories",
+      "image": "https://rukminim2.flixcart.com/image/128/128/xif0q/deodorant/p/9/d/200-black-bold-perfume-duo-150-ml-50-ml-2-body-spray-the-man-original-imagydzwumxv7gjs.jpeg?q=70&crop=false",
+      "status": "Active",
+      "market": "Upcoming"
+    },
+    {
+      "id": "8ca5",
+      "product": " Rolls-Royce Phantom Die ",
+      "price": "759",
+      "description": " Rolls-Royce Phantom Die cast Metal Light & Sound (Multi)",
+      "category": "Toys",
+      "image": "https://rukminim1.flixcart.com/blobio/1160/1160/imr/blobio-imr_f548f3d5a83349e287a2849279998a26.jpeg?q=90&quot",
+      "status": "Active",
+      "market": "Latest"
+    },
+    {
+      "id": "61eb",
+      "product": " Kids Play Tent House",
+      "price": "1299",
+      "description": "SANTGURU Jumbo Size Light Weight Kids Play Tent House for 3-13 Year Old Kids",
+      "category": "Toys",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/outdoor-toy/c/a/j/3-jumbo-size-light-weight-kids-play-tent-house-for-3-13-year-old-original-imags35uyubjxm3x.jpeg?q=70&crop=false",
+      "status": "Active",
+      "market": "Upcoming"
+    },
+    {
+      "id": "f0d1",
+      "product": " Serum Foundation",
+      "price": "823",
+      "description": "Mamaearth Glow Serum Foundation 30ml + Glow Oil Control Compact SPF 30 for a Flawless Base 9g ",
+      "category": "Cosmetic",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/combo-kit/n/z/i/glow-serum-foundation-30ml-glow-oil-control-compact-spf-30-for-a-original-imaggjnafyjxtyj4.jpeg?q=70&crop=false",
+      "status": "Active",
+      "market": "Best"
+    },
+    {
+      "id": "3d9e",
+      "product": "OnePlus Buds Z2",
+      "price": "3999",
+      "description": "High Quality Sound: 11mm dynamic drivers acoustically tuned for bigger, bolder beats with razor-sharp treble & Dolby atmos support delivers immersive, true-to-life sound using industry leading spatial audio",
+      "category": "Airpodes",
+      "image": "https://rukminim2.flixcart.com/image/416/416/kyhlfgw0/headphone/v/m/f/buds-z2-truly-wireless-earbuds-oneplus-original-imagapfcgsac93yu.jpeg?q=70&crop=false",
+      "status": "Active",
+      "market": "Upcoming"
+    },
+    {
+      "id": "5b9e",
+      "product": "OnePlus Nord",
+      "price": "19556",
+      "description": "OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 256 GB)  (8 GB RAM)",
+      "category": "Mobile",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/w/z/u/-original-imagtxvtmxpagdpn.jpeg?q=70&crop=false",
+      "status": "Active",
+      "market": "Latest"
+    },
+    {
+      "id": "2b14",
+      "product": "Dairy Milk",
+      "price": "185",
+      "description": "Chocolate is made from cocoa beans, the dried and fermented seeds of the cacao tree (Theobroma cacao)",
+      "category": "Chocolate",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRQTiOvBdwSC6q6LLpmFZ_vbblojVkT2tWyU7-5tyc-urhY6yInRpVMMpaWNve797C2Sl7410I4wvGC_7OPrBFtVTc9NTX-SJISKVi7yFvk1oeUiPPg0bA1IQ",
+      "status": "Active",
+      "market": "Latest"
+    }
+  ],
+  "cart": [
+    {
+      "id": "b151",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit."
+    },
+    {
+      "id": "affc",
+      "product": "beatXp pro Watch",
+      "price": "799",
+      "description": "24/7 Health Tracking: Stay on top of your wellness with our 24/7 health tracking feature, monitoring your heart rate, sleep patterns, SpO2 and more."
+    },
+    {
+      "id": "ed7a",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat..."
+    },
+    {
+      "id": "adf0",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059"
+    },
+    {
+      "id": "69f4",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059"
+    },
+    {
+      "id": "3625",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "user": "f1b1",
+      "productId": null
+    },
+    {
+      "id": "36bb",
+      "product": "beatXp pro Watch",
+      "price": "799",
+      "description": "24/7 Health Tracking: Stay on top of your wellness with our 24/7 health tracking feature, monitoring your heart rate, sleep patterns, SpO2 and more.",
+      "image": "https://m.media-amazon.com/images/I/71wTOnIlUWL._SX679_.jpg",
+      "user": "f1b1",
+      "productId": "4bd1"
+    },
+    {
+      "id": "b448",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "23fc",
+      "product": "MARS Creamy Matte Lipstick",
+      "price": "189",
+      "description": "Explore the entire range of Lipstick available on Nykaa. Shop more MARS products here.You can browse through the complete world of MARS Lipstick .",
+      "image": "https://images-static.nykaa.com/media/catalog/product/3/6/3615390MARSX00000487-1.jpg?tr=w-344,h-344,cm-pad_resize",
+      "user": "ab10",
+      "productId": "1ba5"
+    },
+    {
+      "id": "ef7a",
+      "product": "Campus",
+      "price": "1199",
+      "description": "A pair of off-white & black running sports shoes, has regular styling, lace-up detail Mesh upper",
+      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13782284/2022/6/30/374598d1-1fe5-44d2-990d-ad38891dee0a1656582776784CampusMenOff-WhiteMeshRunningShoes1.jpg",
+      "user": "ab10",
+      "productId": "b8b8"
+    },
+    {
+      "id": "4ac3",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "user": "ab10",
+      "productId": null
+    },
+    {
+      "id": "c583",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "cf7b",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "7609",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "71cb",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "42ec",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "3cff",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "9175",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "c77c",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "675c",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "productId": null
+    },
+    {
+      "id": "d4bb",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "55f3",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "8ca0",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "bb9d",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "66d5",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "ebfb",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "dce4",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "b518",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "d78e",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "556f",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "d53b",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "f0f7",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "2b10",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "fe8a",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "7ad1",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "2adc",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "4dfd",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "4297",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "94c0",
+      "product": "woman black blazer",
+      "price": "450",
+      "description": "This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids. Lorem ipsum dolor sit.",
+      "image": "https://res.cloudinary.com/dbbfi0kuz/image/upload/v1624426726/products3_00c795c71b.jpg",
+      "user": "ab10",
+      "productId": null
+    },
+    {
+      "id": "0c21",
+      "product": "SCOOBA Reversible Rabbit",
+      "price": "319",
+      "description": "SCOOBA super soft reversible bunny strawberry stuffed toy Made with Love: SCOOBA stuffed toy is crafted using non-toxic materials to ensure that every single snuggle is safe.",
+      "image": "https://m.media-amazon.com/images/I/619dZ2HD-ML._SY450_.jpg",
+      "user": "ab10",
+      "productId": "8bd8"
+    },
+    {
+      "id": "e02c",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "productId": null
+    },
+    {
+      "id": "de4a",
+      "product": "JOHN PLAYERS",
+      "price": "2205",
+      "description": "Colourblock Slim Fit Puffer Jacket",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230928/I6hk/65159753afa4cf41f515788f/-473Wx593H-443011090-white-MODEL5.jpg",
+      "user": "f1b1",
+      "productId": "bb96"
+    },
+    {
+      "id": "17a2",
+      "product": "Safari",
+      "price": "3099",
+      "description": "Luma Printed Poly Carbonate Medium Hard Trolley Bag - 65 cm",
+      "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/18552116/2022/9/5/6f953194-654e-4c29-a9a0-d45d08b5a1941662394271504SafariBlueYellowPrintedCabin-SizedTrolleyBag1.jpg",
+      "user": "f1b1",
+      "productId": "d160"
+    },
+    {
+      "id": "2352",
+      "product": "Titan Unisex's Watch",
+      "price": "6110",
+      "description": "This product is a set of analog watches for men and women. Each watch has plain three hands on an off-white, round dial with calendar showing the day and date.",
+      "image": "https://m.media-amazon.com/images/S/aplus-media/sota/bb1af7a3-12ac-4790-99da-de613868994e.__CR0,0,300,300_PT0_SX300_V1___.jpg",
+      "user": "d034",
+      "productId": "8bb3"
+    },
+    {
+      "id": "e4b7",
+      "product": "MARS Creamy Matte Lipstick",
+      "price": "189",
+      "description": "Explore the entire range of Lipstick available on Nykaa. Shop more MARS products here.You can browse through the complete world of MARS Lipstick .",
+      "image": "https://images-static.nykaa.com/media/catalog/product/3/6/3615390MARSX00000487-1.jpg?tr=w-344,h-344,cm-pad_resize",
+      "user": "d034",
+      "productId": "1ba5"
+    },
+    {
+      "id": "ca4f",
+      "product": "OnePlus Buds Z2",
+      "price": "3999",
+      "description": "High Quality Sound: 11mm dynamic drivers acoustically tuned for bigger, bolder beats with razor-sharp treble & Dolby atmos support delivers immersive, true-to-life sound using industry leading spatial audio",
+      "image": "https://rukminim2.flixcart.com/image/416/416/kyhlfgw0/headphone/v/m/f/buds-z2-truly-wireless-earbuds-oneplus-original-imagapfcgsac93yu.jpeg?q=70&crop=false",
+      "user": "d034",
+      "productId": "3d9e"
+    },
+    {
+      "id": "4694",
+      "product": "Porcelain Cup",
+      "price": "500",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...",
+      "image": "https://window-shop-01.myshopify.com/cdn/shop/products/23_large.jpg?v=1512545059",
+      "user": "02ed",
+      "productId": null
+    },
+    {
+      "id": "ffde",
+      "product": " Kids Play Tent House",
+      "price": "1299",
+      "description": "SANTGURU Jumbo Size Light Weight Kids Play Tent House for 3-13 Year Old Kids",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/outdoor-toy/c/a/j/3-jumbo-size-light-weight-kids-play-tent-house-for-3-13-year-old-original-imags35uyubjxm3x.jpeg?q=70&crop=false",
+      "productId": "61eb"
+    },
+    {
+      "id": "c785",
+      "product": "MARS Creamy Matte Lipstick",
+      "price": "189",
+      "description": "Explore the entire range of Lipstick available on Nykaa. Shop more MARS products here.You can browse through the complete world of MARS Lipstick .",
+      "image": "https://images-static.nykaa.com/media/catalog/product/3/6/3615390MARSX00000487-1.jpg?tr=w-344,h-344,cm-pad_resize",
+      "user": "f1b1",
+      "productId": "1ba5"
+    },
+    {
+      "id": "9db3",
+      "product": "Babyhug Teddy Bear",
+      "price": "537",
+      "description": "Crafted with perfection using the finest materials to give cuddly filling to your little ones Made of super non toxic, soft poly fibre cover stuffed inside",
+      "image": "https://cdn.fcglcdn.com/brainbees/images/products/438x531/11394202a.webp",
+      "user": "f1b1",
+      "productId": "b650"
+    }
+  ],
+  "slider": [
+    {
+      "src": "https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/b656a7f4-4688-4997-bb7c-54b78793981e1658752386588-Western-Wear_Desk.jpg",
+      "alt": "img 1",
+      "id": "1cc4"
+    },
+    {
+      "src": "https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/b656a7f4-4688-4997-bb7c-54b78793981e1658752386588-Western-Wear_Desk.jpg",
+      "alt": "img 2",
+      "id": "e91f"
+    },
+    {
+      "src": "https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/b656a7f4-4688-4997-bb7c-54b78793981e1658752386588-Western-Wear_Desk.jpg",
+      "alt": "img 3",
+      "id": "4258"
+    }
+  ]
+}
