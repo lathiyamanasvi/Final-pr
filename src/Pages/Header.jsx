@@ -4,11 +4,16 @@ import $ from 'jquery'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useAuth } from '../Contexxt/Auth';
 
 function Header() {
+
+    const navigate = useNavigate();
+    const [auth, setAuth] = useAuth()
+
+
     useEffect(() => {
         let menuIcon = document.querySelector('.menuIcon');
         let nav = document.querySelector('.overlay-menu');
@@ -35,14 +40,15 @@ function Header() {
             }
         });
     }, [])
-    const [auth, setAuth] = useAuth()
-    console.log(auth);
+
+
     const logout = () => {
         localStorage.removeItem('user');
         setAuth({
             ...auth,
             user: ""
         })
+        navigate('/');
         toast.success("user succesfully logout");
     }
     return (
@@ -61,33 +67,33 @@ function Header() {
                             <li className='text'><Link to={'/user/home'}>Home</Link></li>
                             <li className='text'><Link to={'/user/product'}>Product</Link></li>
                             <li className='text'><Link href="#about">About</Link></li>
-                            <li className='text'><Link href="#contact">Contact</Link></li>
+                            <li className='text'><Link to={'/contact'}>Contact</Link></li>
                         </ul>
 
-                        
-                    </div>
-                    <div>
-                    <div className='d-flex'>
-                    <div class="dropdown">
-                        <button class=" dropdown-toggle bg-transparent" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                            <FaUser className='fs-4' />
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><Link class="dropdown-item" to={'/'}>Login</Link></li>
-                            <li><Link class="dropdown-item" to={'/Register'}>Sign up</Link></li>
-                            <li><Link class="dropdown-item" href="#" onClick={()=>logout()}>Logout</Link></li>
-                            <li><Link class="dropdown-item" href="#">Profile</Link></li>
 
-                        </ul>
                     </div>
                     <div>
-                    <Link to={'/user/cart'}>
-                        <FaShoppingCart className='fs-4 ms-3' />
-                     </Link>
-                        
+                        <div className='d-flex'>
+                            <div class="dropdown">
+                                <button class=" dropdown-toggle bg-transparent" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <FaUser className='fs-4' />
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><Link class="dropdown-item" to={'/'}>Login</Link></li>
+                                    <li><Link class="dropdown-item" to={'/Register'}>Sign up</Link></li>
+                                    <li><Link class="dropdown-item" href="#" onClick={() => logout()}>Logout</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Profile</Link></li>
+
+                                </ul>
+                            </div>
+                            <div>
+                                <Link to={'/user/cart'}>
+                                    <FaShoppingCart className='fs-4 ms-3' />
+                                </Link>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
                 </nav>
                 <div class="menuIcon">
                     <span class="icon icon-bars"></span>
@@ -102,19 +108,6 @@ function Header() {
                     </ul>
                 </div>
             </div>
-
-            <div className='p-3 d-flex justify-content-between' style={{ backgroundColor: "#F5F5F3", marginTop: "61px" }}>
-
-                {/* <div class="search">
-                    <input type="text" class="search__input" placeholder="Type your text" />
-                    {/* <button class="search__button">
-                    <CiSearch />
-                    </button> */}
-                {/* </div> */} 
-                
-            </div>
-
-
         </>
     )
 }

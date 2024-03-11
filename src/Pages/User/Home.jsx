@@ -16,6 +16,7 @@ import Slider from './Home/Slider';
 import BannerBottom from './Home/BannerBottom';
 import Gallery from './Home/Gallery';
 import NewArrivel from './Home/NewArrivel';
+import Footer from './Home/Footer';
 
 
 function Home() {
@@ -45,7 +46,7 @@ function Home() {
               product.map((val) => {
                 return (
                   <div class="flex-column align-items-center justify-content-center product-item my-3 bg-white m-3 p-3" style={{ width: "18rem" }}>
-                    <div class="product"> <img src={val.image} alt="" />
+                    <div class="product"> <img src={val.image} alt="" style={{objectFit:"contain"}}/>
                       <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
                         <li class="icon"><span><FaExpandArrowsAlt /></span></li>
                         <li class="icon mx-3 fs-5"><span><FaRegHeart /></span></li>
@@ -62,6 +63,8 @@ function Home() {
           </div>
         </div>
       </div>
+     
+     <Footer/>
     </>
   )
 }

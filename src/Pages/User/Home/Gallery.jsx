@@ -6,8 +6,8 @@ const Gallery = () => {
      <div className="container mt-5">
         <div class="gallery">
 
-          <img class="four-grid-cells"
-            src="https://d-themes.com/react/molla/demo-25/images/home/banners/banner-4.jpg"
+          <img class="four-grid-cells h-100"
+            src="https://mb-demo1.myshopify.com/cdn/shop/files/banner1_78752618-8fe6-4899-a42e-b807ba9e84b7.jpg?v=1694412274"
             alt="Northern Winter Sky Image" />
 
           <img class="wide-top"

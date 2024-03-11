@@ -9,10 +9,14 @@ import { FaExpandArrowsAlt } from "react-icons/fa";
 import { GiShoppingBag } from "react-icons/gi";
 import { MdOutlineStar } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../../Contexxt/Auth';
 
 function Product() {
 
   const [products,setProduct] = useState([]);
+  const [auth,setauth] = useAuth('');
+  const navigate = useNavigate('');
 
   const getProduct = async() => {
     try{
@@ -22,13 +26,44 @@ function Product() {
         console.log(err);
         return false;
     }
-}
+  }
 
 const deleteproduct = async(id) => {
   try {
     let {data} = await axios.delete(`http://localhost:8000/product/${id}`)
     const updatedProducts = products.filter(product => product.id !== id);
     setProduct(updatedProducts);
+  } catch (error) {
+    console.log(error);
+    return false;
+  }
+}
+
+const Add = async (id) => {
+  try {
+    if (!auth.user) {
+      alert('user not login');
+      navigate('/');
+    }
+    let single = await axios.get(`http://localhost:8000/product/${id}`);
+    console.log(auth.user.id);
+    let record = single.data;
+    let duplicate = await axios.get(`http://localhost:8000/cart?user=${auth.user.id}&productId=${record.id}`);
+    if (!(duplicate.data != 0)) {
+      let addcart = await axios.post(`http://localhost:8000/cart`, {
+        product: record.product,
+        price: record.price,
+        description: record.description,
+        image: record.image,
+        user: auth.user.id,
+        productId: record.id
+      })
+      alert("successfully added")
+    }
+    else {
+      alert("Product already Exist");
+      return false;
+    }
   } catch (error) {
     console.log(error);
     return false;
@@ -56,11 +91,13 @@ useEffect(()=>{
           products.map((val,i)=>{i=i+1
             return(
                   <div class="flex-column align-items-center justify-content-center product-item my-3 bg-white m-3 p-3" style={{width:"18rem"}}>
-                      <div class="product"> <img src={val.image} alt=""/>
-                          <ul class="d-flex align-items-center justify-content-between list-unstyled icons">
-                              <li class="icon"><span><FaExpandArrowsAlt /></span></li>
-                              <li class="icon mx-5 fs-5"><span><FaRegHeart /></span></li>
-                              <li class="icon fs-5 me-3"><span><GiShoppingBag /></span></li>
+                      <div class="product"> <img src={val.image} alt="" style={{objectFit:"contain"}}/>
+                          <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                            <Link to={`/productdetails/${val.id}`}>
+                            <li class="icon" ><span><FaExpandArrowsAlt /></span></li>
+                            </Link>
+                              
+                              <li class="icon fs-5 mx-3" onClick={() => Add(val.id)}><span><GiShoppingBag /></span></li>
                               <li class="icon fs-5" onClick={()=>deleteproduct(val.id)}><span><MdDelete /></span></li>
                           </ul>
                       </div>

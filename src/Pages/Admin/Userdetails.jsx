@@ -4,7 +4,7 @@ import { useAuth } from '../../Contexxt/Auth'
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import Leftsiderbar from './Leftsidebar';
-import { MdRateReview } from "react-icons/md";
+import { MdDelete } from "react-icons/md";
 import { IoAddCircleSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import './Userdetails.css';
@@ -14,6 +14,7 @@ const Userdetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [user, setUser] = useState({});
+  const [products,setProduct] = useState([]);
   const [cart, setCart] = useState([1, 2, 3]);
   const [auth, setAuth] = useAuth();
 
@@ -22,6 +23,7 @@ const Userdetails = () => {
       navigate('/')
     }
   })
+
 
   const getUser = async () => {
     try {
@@ -45,35 +47,6 @@ const Userdetails = () => {
     }
   }
 
-  const Add = async (id) => {
-    try {
-      if (!auth.user) {
-        alert('user not login')
-      }
-      let single = await axios.get(`http://localhost:8000/product/${id}`);
-      console.log(auth.user.id);
-      let record = single.data;
-      let duplicate = await axios.get(`http://localhost:8000/cart?user=${auth.user.id}&productId=${record.id}`);
-      if (!(duplicate.data != 0)) {
-        let addcart = await axios.post(`http://localhost:8000/cart`, {
-          product: record.product,
-          price: record.price,
-          description: record.description,
-          image: record.image,
-          user: auth.user.id,
-          productId: record.id
-        })
-        alert("successfully added")
-      }
-      else {
-        alert("Product already Exist");
-        return false;
-      }
-    } catch (error) {
-      console.log(error);
-      return false;
-    }
-  }
 
   useEffect(() => {
     getUser();
@@ -114,7 +87,6 @@ const Userdetails = () => {
                     <th scope="col">Product Name</th>
                     <th scope="col">Product Id</th>
                     <th scope="col">Price</th>
-                    <th scope="col">Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -125,12 +97,6 @@ const Userdetails = () => {
                           <th><img src={val.image} style={{ width: "50px", height: "50px" }} className='me-3' />{val.product}</th>
                           <td>{val.id}</td>
                           <td>{val.price}</td>
-                          <td className='d-flex p-4 align-items-center'>
-                            <Link to={`/productdetails/${val.id}`}>
-                              <MdRateReview className='mx-3 fs-4' />
-                            </Link>
-                            <IoAddCircleSharp className='fs-4' />
-                          </td>
                         </tr>
                       )
                     })

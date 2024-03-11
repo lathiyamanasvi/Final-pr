@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Header'
-// import Sidebar from './Sidebar'
+import './User.css';
 import axios from 'axios';
 import { FaExpandArrowsAlt, FaRegHeart } from 'react-icons/fa';
 import { GiShoppingBag } from 'react-icons/gi';
@@ -8,6 +8,9 @@ import { MdOutlineStar } from 'react-icons/md';
 import { useAuth } from '../../Contexxt/Auth';
 import { toast } from 'react-toastify';
 import { Link, useNavigate, useNavigation } from 'react-router-dom';
+import Footer from './Home/Footer';
+import 'jquery-ui-dist/jquery-ui';
+import $ from 'jquery';
 
 
 function Userproduct() {
@@ -19,6 +22,35 @@ function Userproduct() {
   const [cat, setcat] = useState('');
   const [search, setsearch] = useState('');
   const [marketStateFilter, setMarketStatusFilter] = useState("");
+
+
+//   useEffect(()=>{
+//     var nombrePage = $(".colm-container").length;
+
+// showPage = function(pagination) {
+//   if (pagination < 0 || pagination >= nombrePage) return;
+
+//   $(".colm-container").hide().eq(pagination).show();
+//   $("#pagin li").removeClass("active").eq(pagination).addClass("active");
+// }
+
+// // Go to Left
+// $(".prev").click(function() {
+//   showPage($("#pagin ul .active").index() - 1);
+// });
+
+// // Go to Right
+// $(".next").click(function() {
+//   showPage($("#pagin ul .active").index() + 1);
+// });
+
+// $("#pagin ul a").click(function(e) {
+//   e.preventDefault();
+//   showPage($(this).parent().index());
+// });
+
+// showPage(0)
+//   })
 
 
   useEffect(() => {
@@ -112,7 +144,7 @@ function Userproduct() {
     <>
       <Header />
       <div className="d-flex">
-        <div className="shadow col-lg-3">
+        <div className="col-lg-3">
           <div class="overlay" style={{ display: "none" }}></div>
           <div class="search-section">
             <div class="container-fluid container-xl">
@@ -185,7 +217,7 @@ function Userproduct() {
               product && product.map((val) => {
                 return (
                   <div class="flex-column align-items-center justify-content-center product-item my-3 bg-white m-1 pb-3 px-3" style={{ width: "18rem" }}>
-                    <div class="product"> <img src={val.image} alt="" />
+                    <div class="product"> <img src={val.image} alt="" style={{objectFit:"contain"}}/>
                       <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
                         <Link to={`/productdetails/${val.id}`}>
                           <li class="icon"><span><FaExpandArrowsAlt /></span></li>
@@ -202,8 +234,85 @@ function Userproduct() {
               })
             }
           </div>
+          {/* <section>
+  <div class='colm-container'>
+    <div class='colm'>
+      Box 1
+    </div>
+      <div class='colm'>
+      Box 2
+    </div>
+      <div class='colm'>
+      Box 3
+    </div>
+      <div class='colm'>
+      Box 4
+    </div>
+      <div class='colm'>
+      Box 5
+    </div>
+      <div class='colm'>
+      Box 6      
+    </div>
+  </div>
+  <div class='colm-container'>
+    <div class='colm'>
+      Box 7
+    </div>
+      <div class='colm'>
+      Box 8
+    </div>
+      <div class='colm'>
+      Box 9
+    </div>
+      <div class='colm'>
+      Box 10
+    </div>
+      <div class='colm'>
+      Box 11
+    </div>
+      <div class='colm'>
+      Box 12      
+    </div>
+  </div>
+  <div class='colm-container'>
+    <div class='colm'>
+      Box 13
+    </div>
+      <div class='colm'>
+      Box 14
+    </div>
+      <div class='colm'>
+      Box 15
+    </div>
+      <div class='colm'>
+      Box 16
+    </div>
+      <div class='colm'>
+      Box 17
+    </div>
+      <div class='colm'>
+      Box 18      
+    </div>
+  </div>
+  
+  
+  <div id='pagin'>
+    <nav>
+       <span><a class="prev" href="#">Preview</a></span>
+      <ul>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+      </ul>
+      <span><a class="next" href="#">Next</a></span>
+    </nav>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> */}
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
