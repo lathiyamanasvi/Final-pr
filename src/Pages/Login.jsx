@@ -18,7 +18,7 @@ const Login = () => {
 
   const submit = async () => {
     try {
-        let { data } = await axios.get(`http://localhost:8000/user?email=${email}&password=${password}`);
+        let { data } = await axios.get(`http://localhost:8000/user?Email=${email}&password=${password}`);
         console.log(data);
         if(data.length !== 0){
             localStorage.setItem('user',JSON.stringify(data[0]));

@@ -82,9 +82,9 @@ useEffect(()=>{
           <Leftsiderbar style={{height:"100vh!important"}}/>
         </div>
         <div className='col-md-10'>
-        <button className='btn2 d-flex m-auto my-2'>
+          <Link to={'/admin/addproduct'}>        <button className='btn2 d-flex m-auto my-2'>
     Add Product
-</button>
+</button></Link>
           <div style={{height:"100vh",overflow:"auto"}}>
           <div className='d-flex flex-wrap justify-content-center'>
           {
